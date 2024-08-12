@@ -1,0 +1,61 @@
+/* 
+  Docs.strings
+  SwiftUI-BaseProject
+
+  Created by Hyper Thread Solutions on 12/07/22.
+  
+*/
+
+
+
+/*
+ 
+ Text("").font(.body)
+ 
+ Text("")
+ .font(.body)
+
+ Text("")
+ 
+ 
+ 
+ .font(.body)
+ 
+both coding styles are same , as long as there is no code b/w views and modifiers it's valid
+ 
+=> use system fonts,colors because it will dynamically handle i.e if we use color.systembackgroud it will change based on dark mode and light mode , if we use font(.body) it's size will adjust based on device size
+ 
+=> use Color("customcolorliteralfromassets") for custom colors
+=> use Image(systemName:"heart.fill").font(.body).foregroundColor(.red)
+=> Image(systemName:"heart.fill").aspectRatio(contentMode:.fit) or
+=> Image(systemName:"heart.fill").scaleToFit()
+=> above two styles are same
+=> use Image(systemName:"heart.fill").clipShape(Circle())
+=> use .frame(maxWidth:.infinity) to occupy whole device width
+=> Every single View has default frame bcos of this we can see default blue frame in preview UI ,  but we can modify it.
+=> background is for behind the view
+ => overlay is for front the view , remember overlay has alignment option used to achieve fav option
+ =>Always extract subviews and reuse them
+ 
+ => @state notifies View to call body method again
+ => @Binding connection between child and parent views
+ =>use .transition(.slide) and animation to slide view from anyside to view etc
+
+ => environment(\.colorScheme)
+ => environment(\.presentationMode)
+ 
+
+ => @StateObject - Use this ON Creation or Init , It will NOT reload everytime View will reload
+ => @ObservedObject - Use this FOR SUBVIEWS , It will reload everytime View will reload
+ 
+ https://www.youtube.com/watch?v=-yjKAb0Pj60&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=52
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ */
